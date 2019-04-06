@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                 android:layout_marginBottom="130dp">
+        <com.camerakit.CameraKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/camera"
+        />
+        <View
+            android:id="@+id/blackCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+    <com.example.myapplication.CameraControls
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="7dp"/>
+
+</FrameLayout>
